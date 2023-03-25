@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Line Chart JS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="sidebar">
+      <img src="images/SideNav Toggler Lines.svg" alt="toggler" id="toggler" />
+      <img src="images/Shop.svg" alt="shop" />
+      <img src="images/Ungroup.svg" alt="ungroup" />
+      <img src="images/Switches Info.svg" alt="swtiches" />
+      <img src="images/Pink.svg" alt="pink" />
+      <img src="images/Aling left.svg" alt="align" />
+      <img src="images/Chart Pie Info.svg" alt="" />
+      <img src="images/Archive Drawer.svg" alt="" />
+      <img src="images/Info.svg" alt="info" />
+      <img src="images/Calendar.svg" alt="" />
+      <img src="images/Separator.svg" alt="" />
+      <img src="images/D Text.svg" alt="" />
+      <img src="images/Spaceship.svg" alt="" />
+      <img src="images/Palette.svg" alt="Palette" />
+      <img src="images/Switches.svg" alt="" />
+      <img src="images/Chart Pie.svg" alt="" />
+    </div>
+    <header>
+      <div class="search">
+        <img src="images/search__icon.svg" alt="search" />
+        <input type="text" class="search__input" placeholder="Search" />
+      </div>
+      <div class="profile">
+        <img src="images/bell.svg" alt="bell" />
+        <img src="images/ungroup__white.svg" alt="" />
+        <img src="images/Avatar.svg" alt="" class="avatar" />
+        <span class="profile__name">John Snow</span>
+      </div>
+    </header>
+
+    <section class="intro">
+      <div class="intro__items">
+        <div>
+          <span class="intro__title">Default</span>
+          <img src="images/Home.svg" alt="" />
+          <span class="intro__text">
+            <span class="dash">-</span> Dashboards
+            <span class="dash">-</span> Default
+          </span>
+        </div>
+        <div>
+          <button class="intro__btn">New</button>
+          <button class="intro__btn">Filters</button>
+        </div>
+      </div>
+
+      <div class="intro__cards">
+        <div class="card">
+          <div class="card__flex">
+            <div>
+              <div class="card__title">Total traffic</div>
+              <div class="card__number">350,897</div>
+            </div>
+            <img src="images/card_finger.svg" class="card__icon1" />
+          </div>
+          <div class="card__text">
+            <img src="images/Arrow.svg" alt="" class="card__arrow__icon" />
+            <span class="card__text__num">3,48%</span>
+            <span class="card__text__txt">Since last month</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__flex">
+            <div>
+              <div class="card__title">New users</div>
+              <div class="card__number">2,356</div>
+            </div>
+            <img src="images/card_piechart.svg" class="card__icon1" />
+          </div>
+          <div class="card__text">
+            <img src="images/Arrow.svg" alt="" class="card__arrow__icon" />
+            <span class="card__text__num">3,48%</span>
+            <span class="card__text__txt">Since last month</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__flex">
+            <div>
+              <div class="card__title">SALES</div>
+              <div class="card__number">924</div>
+            </div>
+            <img src="images/card_money_coins.svg" class="card__icon1" />
+          </div>
+          <div class="card__text">
+            <img src="images/Arrow.svg" alt="" class="card__arrow__icon" />
+            <span class="card__text__num">3,48%</span>
+            <span class="card__text__txt">Since last month</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__flex">
+            <div>
+              <div class="card__title">PERFORMANCE</div>
+              <div class="card__number">49,65%</div>
+            </div>
+            <img src="images/card_chart.svg" class="card__icon1" />
+          </div>
+          <div class="card__text">
+            <img src="images/Arrow.svg" alt="" class="card__arrow__icon" />
+            <span class="card__text__num">3,48%</span>
+            <span class="card__text__txt">Since last month</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div id="LineChart" class="div1"></div>
+      <div class="div2" id="barChart"></div>
+
+      <div class="members div3">
+        <div class="mem__card__title">Team members</div>
+
+        <div class="members__mem">
+          <div class="members__mem__avatar">
+            <img src="images/john__michael.svg" alt="" />
+            <div class="members__mem__name">
+              John Michael
+              <div class="members__mem_status online">Online</div>
+            </div>
+          </div>
+          <button class="members__mem__btn">Add</button>
+        </div>
+
+        <div class="members__mem">
+          <div class="members__mem__avatar">
+            <img src="images/alex__smith.svg" alt="" />
+            <div class="members__mem__name">
+              Alex Smith
+              <div class="members__mem_status meeting">In a meeting</div>
+            </div>
+          </div>
+          <button class="members__mem__btn">Add</button>
+        </div>
+
+        <div class="members__mem">
+          <div class="members__mem__avatar">
+            <img src="images/samantha__ivy.svg" alt="" />
+            <div class="members__mem__name">
+              Samantha Ivy
+              <div class="members__mem_status offline">Offline</div>
+            </div>
+          </div>
+          <button class="members__mem__btn">Add</button>
+        </div>
+
+        <div class="members__mem">
+          <div class="members__mem__avatar">
+            <img src="images/Avatar.svg" alt="" />
+            <div class="members__mem__name">
+              John Michael
+              <div class="members__mem_status online">Online</div>
+            </div>
+          </div>
+          <button class="members__mem__btn">Add</button>
+        </div>
+      </div>
+
+      <div class="todo div4">
+        <div class="mem__card__title">To do list</div>
+
+        <div class="todo__item">
+          <div>
+            <span class="todo__item__status"></span>
+            <div class="todo__item__name">Call with Dave</div>
+            <div class="todo__item__time">10:30 AM</div>
+          </div>
+          <input type="checkbox" id="call-checkbox" class="hidden__checkbox" />
+          <label for="call-checkbox" class="my-label call"></label>
+        </div>
+
+        <div class="todo__item lunch">
+          <div>
+            <span class="todo__item__status"></span>
+            <div class="todo__item__name">Lunch meeting</div>
+            <div class="todo__item__time">10:30 AM</div>
+          </div>
+          <input type="checkbox" id="lunch-checkbox" class="hidden__checkbox" />
+          <label for="lunch-checkbox" class="my-label lunch"></label>
+        </div>
+
+        <div class="todo__item launch">
+          <div id="check">
+            <span class="todo__item__status"></span>
+            <div class="todo__item__name">Argon Dashboard Launch</div>
+            <div class="todo__item__time">10:30 AM</div>
+          </div>
+          <input type="checkbox" id="argon-checkbox" class="hidden__checkbox" />
+          <label for="argon-checkbox" class="my-label argon"></label>
+        </div>
+
+        <div class="todo__item hack">
+          <div>
+            <span class="todo__item__status"></span>
+            <div class="todo__item__name">Winter Hackaton</div>
+            <div class="todo__item__time">10:30 AM</div>
+          </div>
+          <input type="checkbox" id="hack-checkbox" class="hidden__checkbox" />
+          <label for="hack-checkbox" class="my-label hack"></label>
+        </div>
+      </div>
+
+      <div class="progress div5">
+        <div class="mem__card__title">Progress track</div>
+
+        <div class="progress__name">
+          <div class="progress__icon">
+            <img src="images/track__argon.svg" alt="" />
+          </div>
+          <div class="progress__item">
+            <div class="progress__item__name">Argon Design System</div>
+            <div class="progress__bar">
+              <span class="bar__percentage"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="progress__name">
+          <div class="progress__icon">
+            <img src="images/track__angular.svg" alt="" />
+          </div>
+          <div class="progress__item">
+            <div class="progress__item__name">Angular Now UI Kit PRO</div>
+            <div class="progress__bar">
+              <span class="bar__percentage angular"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="progress__name">
+          <div class="progress__icon">
+            <img src="images/track__diamond.svg" alt="" />
+          </div>
+          <div class="progress__item">
+            <div class="progress__item__name">Black Dashboard</div>
+            <div class="progress__bar">
+              <span class="bar__percentage diamond"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="progress__name">
+          <div class="progress__icon">
+            <img src="images/track__react.svg" alt="" />
+          </div>
+          <div class="progress__item">
+            <div class="progress__item__name">React Material Dashboard</div>
+            <div class="progress__bar">
+              <span class="bar__percentage react"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="table">
+      <div class="container">
+        <div class="feed">
+          <div class="feed__title">Activity Feed</div>
+          <div class="feed__profile">
+            <div class="feed__profile__info">
+              <img
+                src="images/john__michael.svg"
+                alt="profile photo"
+                class="feed__profile__photo"
+              />
+              <div class="feed__profile__name">
+                John Snow
+                <div class="feed__profile__last__activity">3 days ago</div>
+              </div>
+            </div>
+            <div class="feed__profile__btn">
+              <button>+ Follow</button>
+            </div>
+          </div>
+          <div class="feed__text">
+            Personal profiles are the perfect way for you to grab their
+            attention and persuade recruiters to continue reading your CV
+            because you’re telling them from the off exactly why they should
+            hire you.
+          </div>
+          <img src="images/feed__img.svg" alt="" class="feed__img" />
+          <div class="feed__btns">
+            <div class="feed__btns__">
+              <div class="feed__btns__like">
+                <img src="images/Like.svg" alt="">
+                <span class="feed__btns__like__count">150</span>
+              </div>
+              <div class="feed__btns__comment">
+                <img src="images/Comment.svg" alt="">
+                <span class="feed__btns__comment__count">36</span>
+              </div>
+              <div class="feed__btns__share">
+                <img src="images/Share.svg" alt="">
+                <span class="feed__btns__share__count">12</span>
+              </div>
+            </div>
+
+            <div class="feed__btns__avatars">
+              <img src="images/Avatars.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="tab">tab</div>
+        <div class="card1">card1</div>
+        <div class="card2">card2</div>
+        <div class="visits">visits</div>
+        <div class="traffic">traffic</div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.anychart.com/releases/latest/js/anychart-base.min.js"
+      type="text/javascript"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
