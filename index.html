@@ -46,7 +46,7 @@
       <div class="intro__items">
         <div>
           <span class="intro__title">Default</span>
-          <img src="images/Home.svg" alt="" />
+          <img src="images/Home.svg" alt="" class="intro__home"/>
           <span class="intro__text">
             <span class="dash">-</span> Dashboards
             <span class="dash">-</span> Default
@@ -273,58 +273,535 @@
     <section class="table">
       <div class="container">
         <div class="feed">
-          <div class="feed__title">Activity Feed</div>
-          <div class="feed__profile">
-            <div class="feed__profile__info">
-              <img
-                src="images/john__michael.svg"
-                alt="profile photo"
-                class="feed__profile__photo"
-              />
-              <div class="feed__profile__name">
-                John Snow
-                <div class="feed__profile__last__activity">3 days ago</div>
+          <div class="feed__content">
+            <div class="feed__title">Activity Feed</div>
+            <div class="feed__profile">
+              <div class="feed__profile__info">
+                <img
+                  src="images/john__michael.svg"
+                  alt="profile photo"
+                  class="feed__profile__photo"
+                />
+                <div class="feed__profile__name">
+                  John Snow
+                  <div class="feed__profile__last__activity">3 days ago</div>
+                </div>
+              </div>
+              <div class="feed__profile__btn">
+                <button>
+                  <span>+</span>
+                  Follow
+                </button>
               </div>
             </div>
-            <div class="feed__profile__btn">
-              <button>+ Follow</button>
+            <div class="feed__text">
+              Personal profiles are the perfect way for you to grab their
+              attention and persuade recruiters to continue reading your CV
+              because you’re telling them from the off exactly why they should
+              hire you.
             </div>
-          </div>
-          <div class="feed__text">
-            Personal profiles are the perfect way for you to grab their
-            attention and persuade recruiters to continue reading your CV
-            because you’re telling them from the off exactly why they should
-            hire you.
-          </div>
-          <img src="images/feed__img.svg" alt="" class="feed__img" />
-          <div class="feed__btns">
-            <div class="feed__btns__">
-              <div class="feed__btns__like">
-                <img src="images/Like.svg" alt="">
-                <span class="feed__btns__like__count">150</span>
+            <div class="feed__img">
+              <img src="images/feed__img.svg" alt="" class="" />
+            </div>
+            <div class="feed__btns">
+              <div class="feed__btns__">
+                <div class="feed__btns__like">
+                  <img src="images/Like.svg" alt="" />
+                  <span class="feed__btns__like__count">150</span>
+                </div>
+                <div class="feed__btns__comment">
+                  <img src="images/Comment.svg" alt="" />
+                  <span class="feed__btns__comment__count">36</span>
+                </div>
+                <div class="feed__btns__share">
+                  <img src="images/Share.svg" alt="" />
+                  <span class="feed__btns__share__count">12</span>
+                </div>
               </div>
-              <div class="feed__btns__comment">
-                <img src="images/Comment.svg" alt="">
-                <span class="feed__btns__comment__count">36</span>
-              </div>
-              <div class="feed__btns__share">
-                <img src="images/Share.svg" alt="">
-                <span class="feed__btns__share__count">12</span>
+
+              <div class="feed__btns__avatars">
+                <img src="images/Avatars.svg" alt="" />
+                <span class="feed__btns__avatars__txt">and 30+ more</span>
               </div>
             </div>
 
-            <div class="feed__btns__avatars">
-              <img src="images/Avatars.svg" alt="">
+            <div class="feed__twits">
+              <div class="feed__twits__avatar">
+                <img src="images/john__michael.svg" alt="" />
+              </div>
+              <div class="feed__twits__username">Michael Lewis</div>
+              <div class="feed__twits__text">
+                Cras sit amet nibh libero nulla vel metus scelerisque ante
+                sollicitudin. Cras purus odio vestibulum in vulputate viverra
+                turpis.
+              </div>
+              <div class="feed__twits__btns">
+                <div>
+                  <img src="images/Like.svg" alt="" />
+                  <span>3 likes</span>
+                </div>
+                <div>
+                  <img src="images/Share.svg" alt="" />
+                  <span>2 shares</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="feed__twits second">
+              <div class="feed__twits__avatar">
+                <img src="images/alex__smith.svg" alt="" />
+              </div>
+              <div class="feed__twits__username">Jessica Stones</div>
+              <div class="feed__twits__text">
+                Cras sit amet nibh libero nulla vel metus scelerisque ante
+                sollicitudin. Cras purus odio vestibulum in vulputate viverra
+                turpis.
+              </div>
+              <div class="feed__twits__btns">
+                <div>
+                  <img src="images/Like.svg" alt="" />
+                  <span>10 likes</span>
+                </div>
+                <div>
+                  <img src="images/Share.svg" alt="" />
+                  <span>1 shares</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="feed__comment">
+              <div class="feed__comment__avatar">
+                <img src="images/samantha__ivy.svg" alt="" />
+              </div>
+              <div class="feed__comment__text">
+                <input type="text" placeholder="Write your comment" />
+              </div>
             </div>
           </div>
         </div>
-        <div class="tab">tab</div>
-        <div class="card1">card1</div>
-        <div class="card2">card2</div>
-        <div class="visits">visits</div>
-        <div class="traffic">traffic</div>
+
+        <div class="tab">
+          <div class="tab__title">Light table</div>
+          <div class="tab__sort">
+            <div class="tab__sort__project">
+              Project
+              <img src="images/caret.svg" alt="" />
+            </div>
+            <div class="tab__sort__budget">
+              Budget <img src="images/caret.svg" alt="" />
+            </div>
+            <div class="tab__sort__status online">
+              Status <img src="images/caret.svg" alt="" />
+            </div>
+            <div class="tab__sort__users">users</div>
+            <div class="tab__sort__completion">
+              completion <img src="images/caret.svg" alt="" />
+            </div>
+          </div>
+          <div class="tab__item argon__system">
+            <div class="tab__item__name">
+              <img class="tab__item__icon" src="images/track__argon.svg" />
+              Argon Desing System
+            </div>
+            <div class="tab__item__budget ml-16">$2500 USD</div>
+            <div class="tab__item__status pending ml-16">pending</div>
+            <img
+              class="tab__item__users ml-16"
+              src="images/four__avatars.svg"
+            />
+            <div class="tab__item__completion">
+              <div>
+                60%
+                <img
+                  src="images/edit.svg"
+                  alt=""
+                  class="tab__item__completion__edit"
+                />
+              </div>
+              <div class="bar__cover">
+                <span class="bar__percentage"></span>
+              </div>
+            </div>
+          </div>
+          <div class="tab__item angular__system">
+            <div class="tab__item__name">
+              <img class="tab__item__icon" src="images/track__angular.svg" />
+              Angular Now UI Kit PRO
+            </div>
+            <div class="tab__item__budget">$1800 USD</div>
+            <div class="tab__item__status completed ml-16">completed</div>
+            <img class="tab__item__users" src="images/four__avatars.svg" />
+            <div class="tab__item__completion">
+              <div>
+                100%
+                <img
+                  src="images/edit.svg"
+                  alt=""
+                  class="tab__item__completion__edit"
+                />
+              </div>
+              <div class="bar__cover">
+                <span class="bar__percentage angular"></span>
+              </div>
+            </div>
+          </div>
+          <div class="tab__item diamond__system">
+            <div class="tab__item__name">
+              <img class="tab__item__icon" src="images/track__diamond.svg" />
+              Black Dashboard
+            </div>
+            <div class="tab__item__budget ml-46">$3150 USD</div>
+            <div class="tab__item__status pending ml-16">delayed</div>
+            <img
+              class="tab__item__users ml-16"
+              src="images/four__avatars.svg"
+            />
+            <div class="tab__item__completion">
+              <div>
+                72%
+                <img
+                  src="images/edit.svg"
+                  alt=""
+                  class="tab__item__completion__edit"
+                />
+              </div>
+              <div class="bar__cover">
+                <span class="bar__percentage diamond"></span>
+              </div>
+            </div>
+          </div>
+          <div class="tab__item react__system">
+            <div class="tab__item__name">
+              <img class="tab__item__icon" src="images/track__react.svg" />
+              React Material Dashboard
+            </div>
+            <div class="tab__item__budget -ml-15">$4400 USD</div>
+            <div class="tab__item__status scheduled ml-16">on schedule</div>
+            <img
+              class="tab__item__users -ml-12"
+              src="images/four__avatars.svg"
+            />
+            <div class="tab__item__completion">
+              <div>
+                90%
+                <img
+                  src="images/edit.svg"
+                  alt=""
+                  class="tab__item__completion__edit"
+                />
+              </div>
+              <div class="bar__cover">
+                <span class="bar__percentage react"></span>
+              </div>
+            </div>
+          </div>
+          <div class="tab__item vue__system">
+            <div class="tab__item__name">
+              <img class="tab__item__icon" src="images/track__vue.svg" />
+              Vue Paper UI Kit PRO
+            </div>
+            <div class="tab__item__budget ml-16">$2200 USD</div>
+            <div class="tab__item__status completed ml-16">completed</div>
+            <img class="tab__item__users" src="images/four__avatars.svg" />
+            <div class="tab__item__completion">
+              <div>
+                100%
+                <img
+                  src="images/edit.svg"
+                  alt=""
+                  class="tab__item__completion__edit"
+                />
+              </div>
+              <div class="bar__cover">
+                <span class="bar__percentage angular"></span>
+              </div>
+            </div>
+          </div>
+          <div class="tab__item argon__system">
+            <div class="tab__item__name">
+              <img class="tab__item__icon" src="images/track__argon.svg" />
+              Argon Desing System
+            </div>
+            <div class="tab__item__budget ml-16">$2500 USD</div>
+            <div class="tab__item__status pending ml-16">pending</div>
+            <img
+              class="tab__item__users ml-16"
+              src="images/four__avatars.svg"
+            />
+            <div class="tab__item__completion">
+              <div>
+                60%
+                <img
+                  src="images/edit.svg"
+                  alt=""
+                  class="tab__item__completion__edit"
+                />
+              </div>
+              <div class="bar__cover">
+                <span class="bar__percentage"></span>
+              </div>
+            </div>
+          </div>
+          <div class="tab__item angular__system">
+            <div class="tab__item__name">
+              <img class="tab__item__icon" src="images/track__angular.svg" />
+              Angular Now UI Kit PRO
+            </div>
+            <div class="tab__item__budget">$1800 USD</div>
+            <div class="tab__item__status completed ml-16">completed</div>
+            <img class="tab__item__users" src="images/four__avatars.svg" />
+            <div class="tab__item__completion">
+              <div>
+                100%
+                <img
+                  src="images/edit.svg"
+                  alt=""
+                  class="tab__item__completion__edit"
+                />
+              </div>
+              <div class="bar__cover">
+                <span class="bar__percentage angular"></span>
+              </div>
+            </div>
+          </div>
+          <div class="tab__item diamond__system">
+            <div class="tab__item__name">
+              <img class="tab__item__icon" src="images/track__diamond.svg" />
+              Black Dashboard
+            </div>
+            <div class="tab__item__budget ml-46">$3150 USD</div>
+            <div class="tab__item__status pending ml-16">delayed</div>
+            <img
+              class="tab__item__users ml-16"
+              src="images/four__avatars.svg"
+            />
+            <div class="tab__item__completion">
+              <div>
+                72%
+                <img
+                  src="images/edit.svg"
+                  alt=""
+                  class="tab__item__completion__edit"
+                />
+              </div>
+              <div class="bar__cover">
+                <span class="bar__percentage diamond"></span>
+              </div>
+            </div>
+          </div>
+          <div class="tab__item angular__system">
+            <div class="tab__item__name">
+              <img class="tab__item__icon" src="images/track__angular.svg" />
+              Angular Now UI Kit PRO
+            </div>
+            <div class="tab__item__budget">$1800 USD</div>
+            <div class="tab__item__status completed ml-16">completed</div>
+            <img class="tab__item__users" src="images/four__avatars.svg" />
+            <div class="tab__item__completion">
+              <div>
+                100%
+                <img
+                  src="images/edit.svg"
+                  alt=""
+                  class="tab__item__completion__edit"
+                />
+              </div>
+              <div class="bar__cover">
+                <span class="bar__percentage angular"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card1">
+          <div class="card1__balance">
+            <span>$</span>
+            3,300
+          </div>
+          <div class="card1__current__balance">
+            <span>Your current balance</span>
+            <br />
+            <span>
+              <span class="card1__current__balance__green">+15%</span>
+              <span>($250)</span>
+            </span>
+          </div>
+          <button class="card1__add">Add credit</button>
+          <div class="card1__operations">
+            <div class="card1__operations__orders">
+              <span>Orders: 60%</span>
+              <div class="card1__bar__cover">
+                <span class="card__1bar__percentage orders"></span>
+              </div>
+            </div>
+            <div class="card1__operations__sales">
+              <span>Sales: 40%</span>
+              <div class="card1__bar__cover">
+                <span class="card__1bar__percentage"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card2">
+          <div class="card2__bitcoin">
+            <img src="images/Bitcoin.svg" alt="" />
+            <button class="card2__button">ACTIVE</button>
+          </div>
+          <div class="card2__username">
+            <span>username</span>
+            <h5>@johnsnow</h5>
+          </div>
+          <div class="card2__name">
+            <span>name</span>
+            <h5>John Snow</h5>
+          </div>
+        </div>
+        <div class="visits">
+          <div class="visits__title">
+            <h5>Page visits</h5>
+            <div class="visits__title__btn">
+              <button>See all</button>
+            </div>
+          </div>
+
+          <div class="visits__sort">
+            <div class="visits__sort__page">Page name</div>
+            <div class="visits__sort__count">visitors</div>
+            <div class="visits__sort__unique">unique users</div>
+            <div class="visits__sort__rate">bounce rate</div>
+          </div>
+
+          <div class="visits__item">
+            <div class="visits__item__name">/argon/</div>
+            <div class="visits__item__count">4,569</div>
+            <div class="visits__item__unique">340</div>
+            <div class="visits__item__rate">
+              <img src="images/Up.svg" alt="" />
+              46,53%
+            </div>
+          </div>
+          <div class="visits__item">
+            <div class="visits__item__name">/argon/index.html</div>
+            <div class="visits__item__count">3,985</div>
+            <div class="visits__item__unique">319</div>
+            <div class="visits__item__rate">
+              <img src="images/Down.svg" alt="" />
+              46,53%
+            </div>
+          </div>
+          <div class="visits__item">
+            <div class="visits__item__name">/argon/charts.html</div>
+            <div class="visits__item__count">3,513</div>
+            <div class="visits__item__unique">294</div>
+            <div class="visits__item__rate">
+              <img src="images/Down.svg" alt="" />
+              36,49%
+            </div>
+          </div>
+          <div class="visits__item">
+            <div class="visits__item__name">/argon/tables.html</div>
+            <div class="visits__item__count">2,050</div>
+            <div class="visits__item__unique">147</div>
+            <div class="visits__item__rate">
+              <img src="images/Up.svg" alt="" />
+              50,87%
+            </div>
+          </div>
+          <div class="visits__item">
+            <div class="visits__item__name">/argon/profile.html</div>
+            <div class="visits__item__count">1,795</div>
+            <div class="visits__item__unique">190</div>
+            <div class="visits__item__rate">
+              <img src="images/Down.svg" alt="" />
+              46,53%
+            </div>
+          </div>
+        </div>
+        <div class="traffic">
+          <div class="traffic__title">
+            <h5>Page visits</h5>
+            <div class="traffic__title__btn">
+              <button>See all</button>
+            </div>
+          </div>
+
+          <div class="traffic__sort">
+            <div class="traffic__sort__page">Referal</div>
+            <div class="traffic__sort__count">visitors</div>
+          </div>
+
+          <div class="traffic__referals">
+            <div class="traffic__referal">
+              <h5 class="traffic__referal__name">Facebook</h5>
+              <p class="traffic__referal__number">1,480</p>
+              <div class="traffic__referal__percentage">
+                <span>60%</span>
+                <div class="traffic__bar__cover">
+                  <span class="traffic__bar__percentage"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="traffic__referal">
+              <h5 class="traffic__referal__name">Facebook</h5>
+              <p class="traffic__referal__number">5,480</p>
+              <div class="traffic__referal__percentage">
+                <span>70%</span>
+                <div class="traffic__bar__cover">
+                  <span class="traffic__bar__percentage green__grad"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="traffic__referal">
+              <h5 class="traffic__referal__name">Google</h5>
+              <p class="traffic__referal__number">4,807</p>
+              <div class="traffic__referal__percentage">
+                <span>80%</span>
+                <div class="traffic__bar__cover">
+                  <span class="traffic__bar__percentage purple__grad"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="traffic__referal">
+              <h5 class="traffic__referal__name">Instagram</h5>
+              <p class="traffic__referal__number">3,678</p>
+              <div class="traffic__referal__percentage">
+                <span>75%</span>
+                <div class="traffic__bar__cover">
+                  <span class="traffic__bar__percentage blue__grad"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="traffic__referal">
+              <h5 class="traffic__referal__name">Twitter</h5>
+              <p class="traffic__referal__number">2,645</p>
+              <div class="traffic__referal__percentage">
+                <span>30%</span>
+                <div class="traffic__bar__cover">
+                  <span class="traffic__bar__percentage orange__grad"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
+    <footer>
+      <div class="footer__copyright">
+        <p>&copy; 2023</p>
+        <span>Creative John</span>
+
+      </div>
+      <div class="footer__btns">
+        <button>Creative John</button>
+        <button>About Us</button>
+        <button>Blog</button>
+        <button>License</button>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.anychart.com/releases/latest/js/anychart-base.min.js"
